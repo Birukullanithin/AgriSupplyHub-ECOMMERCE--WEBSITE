@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      div{
+        width:35%;
+        padding: 12px 20px;
+        border:2px solid white;
+        text-shadow:3px 3px 4px #2F58CD;
+        box-shadow:3px 3px 3px #2F58CD;
+         translate:420px 0px;
+      }
+  input[type=text],input[type=number],input[type=button],input[type=email]{
+    /* width:90%;
+    height: 80%;
+    padding: 13px 20px;
+ margin: 8px 0;
+ display: inline-block;
+ border: 3px solid #95BDFF;
+ border-radius: 8px;
+ box-sizing: border-box;
+ background-color:inherit;*/
+ width: 80%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+    border-bottom: 2px solid green;
+    font-family:'Times New Roman';
+
+}
+  input[type=button]{
+    cursor: pointer;
+    background-color: green;
+  }
+  body{
+     background-image: linear-gradient(rgba(5,9,6,0.76), rgba(5,9,6,0.76)),url("images/farmer.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ ::placeholder{
+   color:#B9F3E4;
+   font-size: 15px;
+
+ }
+ .alert1 {
+  padding: 20px;
+  position: relative;
+  top: 0px;
+  
+  background-color:white; /* Red */
+  color: #f44336;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+button[type="submit"] {
+  padding: 10px 20px;
+  position: relative;
+  left: 200px;
+  background-color: #007BFF; /* Blue */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+  </style>
+  </head>
+  <body>
+    <!-- <script>
+    function sanju(){
+       alert("entered details are correct....!");
+     open("login.html");
+
+  }
+     </script>
+    <script>
+     function validpassword(){
+       var password=document.myform.sanju3.value;
+       var cpassword=document.myform.sanju4.value;
+       var name=document.myform.sanju1.value;
+       var email=document.myform.sanju4.value;
+       if(password.length<6){
+         alert("password must contain 6 character ")
+         return false;
+       }
+     }
+    </script> -->
+   
+   
+    <div>
+      <h1 style="color:#C92C6D">Signup</h1>
+    
+      <form action="/signin" method="post">
+        <!-- onsubmit="return validpassword()" action="login.html" -->
+        <input type="text"  name="name" placeholder="Enter Name" /><br /><br />
+        <input type="number"  name="number" placeholder="Enter Phone number" /><br /><br />
+        <input type="number"  name="Alternate_number" placeholder="Alternate number" /><br /><br />
+        <input type="email" name="email" placeholder="Enter Email" /><br /><br />
+        <input type="text"  name="password"placeholder="Enter Password" /><br /><br />
+        <input type="text"  name="cpassword" placeholder="Confirm password" /><br /><br />
+        <button type="submit">Submit</button>
+        <!-- <a href="login.html"><input type="button" value="Submit"  onclick="sanju()"/></a> -->
+        <!-- <input type="button" value="submit" onclick="sanju()" /> -->
+      </form>
+    </div>
+  </body>
+  <script>
+    setTimeout(function() {
+      var elem = document.getElementById('alert');
+      return elem.parentNode.removeChild(elem);
+    }, 2000); // 2000 ms = 2 seconds
+  </script>
+</html>

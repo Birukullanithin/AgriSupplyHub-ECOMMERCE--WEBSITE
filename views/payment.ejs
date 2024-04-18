@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css" >
+        <link rel="stylesheet" href="style1.css" >
+        <style>
+         .foot{
+          position: relative;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+        
+ 
+         }
+         .box{
+          position: relative;
+          top:190px;
+         }
+         h2{
+          color: white;
+         }
+         h4{
+          color: white;
+         }
+         .bt {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+          form{
+            position: relative;
+            bottom: 58px;
+            left: 150px;
+        
+          }
+          .pay{
+            position: relative;
+            bottom: 58px;
+            left: 44px;
+          }
+        </style>
+    </head>
+       <body>
+           <!---payment-->
+           
+
+
+           
+          
+            <div class="box" > 
+              <h2>Choose any payment mode</h3><br>
+              <h4 id="lef">Cash On Delivery</h4>
+              <form action="/order" method="post" >
+              <button class="bt" type="submit">Order</button>
+              </form>
+             <section  class="ket">
+                  
+                 
+                   <h4 id="lef">UPI</h4>
+                 <span class="links">
+                 <ul class="pay">
+                 <li><a href="#"><img src="images\gpay1.png" alt="google pay"></a></li>
+                 <li> <a  href="#"><img src="images\paytm1.png" alt="paytm"></a></li>
+                  <li><a  href="#"><img src="\images\phonepe1.png" alt="phonepe"></a></li>
+                  <li><a  href="#"><img src="images\paypal1.png" alt="paypal"></a></li>
+
+                  </ul>
+                  
+                </span>
+                <h4 id="lef"> Net Banking/ Credit/ Debit Card</h4><br><br>
+                <span class="links">
+                    <ul>
+                    <li><a  href="#"><img src="\images\net1.jpg" alt="paytm"></a></li>
+                    <li><a  href="#"><img src="images\ccx.jpg" alt="paytm"></a></li>
+                    <li><a href="#"><img src="images\dc4.jpg" alt="paytm"></a></li>
+                     </ul>
+                  </span><br>
+            </section>
+            </div>
+          
+             
+    
+          
+        </body>
+        <!-- <script>
+          function processing(){
+            window.alert("processing payment.....\r\n Dont refresh page");
+            window.alert("payment successfull....")
+            alert("your orderid is 56789")
+            open("home.html")
+          }
+        </script> -->
+        </html>

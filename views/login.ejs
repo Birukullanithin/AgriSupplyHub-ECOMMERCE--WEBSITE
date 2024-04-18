@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <style media="screen">
+      div{
+        color:white;
+        width:35%;
+        padding: 12px 20px;
+        border:2px solid white;
+        box-shadow:3px 3px 3px #2F58CD;
+         translate:420px 100px;
+      }
+  input[type=text],input[type=number],input[type=button],input[type=email]{
+    width:90%;
+    height: 80%;
+    padding: 13px 20px;
+ margin: 8px 0;
+ display: inline-block;
+ border: 2.3px solid white;
+ border-color:#0F6292;
+ border-radius: 6px;
+ box-sizing: border-box;
+ background-color:inherit;
+ color:white;
+  }
+  button{
+    cursor: pointer;
+    background-color:green;
+    width:90%;
+    height: 80%;
+    padding: 13px 20px;
+ margin: 8px 0;
+ display: inline-block;
+ border: 2.3px solid white;
+ border-color:#0F6292;
+ border-radius: 6px;
+ box-sizing: border-box;
+ background-color:inherit;
+ background-color:green;
+  }
+button a{
+  text-decoration: none;
+  }
+p{
+  text-align: center;
+  color:white;
+}
+p a{
+  color:red;
+}
+body{
+      background-image:linear-gradient(rgba(4,9,10,0.8),rgba(4,9,10,0.8)),url("images/farmer.jpg");
+      background-size:cover;
+          background-attachment: fixed;
+          background-repeat:no-repeat;
+          width:100%;
+          height:100%;
+
+}
+input[value=""]{
+  color:white;
+}
+::placeholder{
+  color:#B9F3E4;
+  font-size: 18px;
+  font-family:'Times New Roman'
+}
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+    //  function sanju(){
+    //   alert("Login details are correct....!");
+    //   open("home.html");
+
+    // }
+    function validate(){
+            var userName=document.getElementById('uname');
+            var password=document.getElementById('pass');
+
+            // if( userName.value =="" || password.value ==""){
+            //     alert("No blank palces allowed");
+            //     // return false;
+            // }
+            // else{
+            //     // true;
+            // }
+            if( userName.value.trim() ==""){
+                alert('Please enter the required details');
+                // uname.style.border="solid 2px red"
+                // document.getElementById("user").style.visibility="visible" ;
+                return false
+
+            }
+            else if( password.value.trim() ==""){
+                alert('No blank password');
+                return false
+
+            }
+            else if( password.value.trim().length<3){
+                alert('password is to short');
+                return false
+            }
+            else{
+                return true
+            }
+
+        }
+      
+    </script>
+     <!-- <form onsubmit=" return validate()"> -->
+    <div>
+      
+      <form action="login" method="post">
+      <h1 style="color:#C92C6D ">Login</h1>
+      <form onsubmit=" return validate()">
+        <input type="text"  id="uname" placeholder="Full name" name="userName"/><br /><br />
+        <!-- <input type="number" value=" " placeholder="Enter Phone number" /><br /><br /> -->
+        <input type="text"   id="pass" placeholder="Enter Password" name="password" /><br /><br />
+        <button type="submit" >Submit</button>
+      </form>
+      <p>
+        not registered ? <a  style=" text-decoration:none"href="signup">Signup</a>
+      </p>
+      </form>
+    </div>
+  <!-- </form> -->
+  </body>
+</html>
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+            color:white;
+        }
+        body{
+  background-image:linear-gradient(rgba(4,9,10,0.6),rgba(4,9,10,0.6)),url("images/farmer2.jpg");
+  background-size:cover;
+      background-attachment: fixed;
+      background-repeat:no-repeat;
+      width:100%;
+      height:100%;
+}
+        form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 3px;
+  color: white;
+  border: 1px solid #ccc;
+  background: transparent;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="submit"]:active {
+  background-color: #3e8e41;
+}
+    </style>
+</head>
+<body>
+    <center>
+    <h2>Enter Your Delivery Address</h2>
+</center>
+    <form action="/pay" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+        </div>
+        <div>
+            <label for="address1">Address Line 1:</label>
+            <input type="text" id="address1" name="address1"><br><br>
+        </div>
+        <div>
+            <label for="address2">Address Line 2:</label>
+            <input type="text" id="address2" name="address2"><br><br>
+        </div>
+        <div>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city"><br><br>
+        </div>
+        <div>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state"><br><br>
+        </div>
+        <div>
+            <label for="zip">Pin Code:</label>
+            <input type="text" id="zip" name="zip"><br><br>
+        </div>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone"><br><br>
+        </div>
+        <button> Submit</button>
+    </form>
+</body>
+</html>

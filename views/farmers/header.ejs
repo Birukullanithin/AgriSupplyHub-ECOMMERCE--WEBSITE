@@ -1,0 +1,85 @@
+<section1 >
+  <!-- <a href="home.html"><img id="logo" src="C:\cofeinfinity\images\home.jpeg" alt="Home" /></a> -->
+<div class="navbar">
+ <!-- <img id="logo" src="C:\cofeinfinity\images\home.jpeg" alt="Home" /> -->
+ <form action="/home3" method="post">
+  <button type="submit" name="home">Home</button>
+</form>
+   <form action="/home" method="post">
+     <button type="submit"> Contact</button>
+ </form>
+ 
+ <form action="/home2" method="post">
+   <button type="submit" name="register">Register</button>
+ </form>
+ <form action="/search" method="post">
+  <div class="nav-search">
+    <select class="serach-select">
+        <option>All</option>
+    </select>
+    <input class="search-input" name="search" type="text" id="search" onkeyup="searchFunction()" placeholder="Search.....">
+    <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+</div>
+</form>
+<form action="/home1" method="post">
+  <button type="submit" name="Storage">Storage</button>
+ </form>
+ 
+ 
+<form action="/add" method="post">
+  <button type="submit" name="home">Cart</button>
+</form>
+<form action="/signup" method="get">
+  <button type="submit" name="home">Signup</button>
+</form>
+</div>
+<div id="results"></div>
+
+<div class="offers-bar">
+<h1>Special Offer: Get 20% off with code SPECIAL20</h1>
+</div>
+
+<!--  
+<input type="text" id="search" oninput="searchFunction()" placeholder="Search for vegetables...">
+<div id="results"></div> -->
+
+<script>
+function searchFunction() {
+  let list = ['Rice', 'Wheat', 'Corn', 'Barley', 'Oats', 'Rye', 'Sorghum', 'Millet', 'Quinoa', 'Buckwheat','Wheat', 'Rice', 'Corn (Maize)', 'Soybeans', 'Cotton', 'Sugarcane', 'Coffee', 'Tea', 'Cocoa', 'Rubber',
+  'Lentils', 'Chickpeas (Garbanzo Beans)', 'Black-eyed Peas', 'Kidney Beans', 'Black Beans', 'Pinto Beans', 'Split Peas (Green and Yellow)', 'Mung Beans', 'Adzuki Beans', 'Fava Beans (Broad Beans)',
+  'Sorghum', 'Pearl Millet', 'Finger Millet (Ragi)', 'Foxtail Millet', 'Proso Millet', 'Barnyard Millet', 'Little Millet', 'Kodo Millet', 'Brown Top Millet', 'Teff',
+  'Carrot', 'Spinach', 'Broccoli', 'Cauliflower', 'Bell Pepper', 'Potato', 'Tomato', 'Cucumber', 'Zucchini', 'Eggplant',
+  'Apple', 'Banana', 'Orange', 'Mango', 'Pineapple', 'Strawberry', 'Grape', 'Watermelon', 'Kiwi', 'Peach'];
+
+  let input = document.getElementById('search');
+  let filter = input.value.toUpperCase();
+  let resultsDiv = document.getElementById('results');
+
+  // Clear previous results
+  resultsDiv.innerHTML = '';
+
+  if (filter.trim() === '') {
+    // If the search input is empty, clear the results and return
+    return;
+  }
+
+  let counter = 0;
+  for (let i = 0; i < list.length; i++) {
+    let txtValue = list[i].toUpperCase();
+    if (txtValue.indexOf(filter) > -1) {
+      // Create a new div for each matching item and append it to the results div
+      let resultDiv = document.createElement('div');
+      resultDiv.textContent = list[i];
+      resultDiv.className = 'result'; 
+      resultsDiv.appendChild(resultDiv);
+
+      counter++;
+      if (counter >= 5) {
+        break;
+      }
+    }
+  }
+}
+</script>

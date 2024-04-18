@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <style media="screen">
+      div{
+        width:35%;
+        padding: 12px 20px;
+
+        border:2px solid white;
+         translate:420px 100px;
+      }
+  input[type=text],input[type=number],input[type=button],input[type=email]{
+    width:90%;
+    height: 80%;
+    padding: 13px 20px;
+ margin: 8px 0;
+ display: inline-block;
+ border: 2.3px solid white;
+ border-color:#0F6292;
+ border-radius: 6px;
+ box-sizing: border-box;
+ background-color:inherit;
+  }
+  input[type=button]{
+    cursor: pointer;
+    background-color:green;
+  }
+p{
+  text-align: center;
+}
+body{
+      background-image:linear-gradient(rgba(4,9,10,0.7),rgba(4,9,10,0.7)),url("images/farmer.jpg");
+      background-size:cover;
+          background-attachment: fixed;
+          background-repeat:no-repeat;
+          width:100%;
+          height:100%;
+
+}
+::placeholder{
+  color:#B9F3E4;
+  font-size: 18px;
+  font-family:'Times New Roman'
+}
+    </style>
+  </head>
+  <body>
+    <script>
+     function sanju(){
+      alert("Login details are correct....!");
+      open("index.html");
+
+    }
+    </script>
+    <div>
+      <h1 style="color:#C92C6D">Login</h1>
+      <forms>
+        <input type="email" value="" placeholder="Enter Email" /><br /><br />
+        <!-- <input type="number" value=" " placeholder="Enter Phone number" /><br /><br /> -->
+        <input type="text"  placeholder="Enter Password" /><br /><br />
+        <input type="button" value="Submit" onclick="sanju()" />
+      </forms>
+      <p>
+        not registered ? <a href="signup.html">Signup</a>
+      </p>
+    </div>
+  </body>
+</html>

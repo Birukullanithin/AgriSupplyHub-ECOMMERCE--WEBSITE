@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="home.css">
+    <title>cerals</title>
+    <style>
+      footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include("header.ejs") %>
+    <center>
+      <h1 >Cereals</h1>
+    </center>
+    <section2 class="how">
+        <center>
+         <table cellspacing="49">
+           <tr>
+             <div id="noo">
+             <td id="images"><a href="farmers/wheat">
+               <img src="images\maize.jpg" alt="Maize" >
+               <center>
+                Maize
+               </center></a>
+             </td>
+             <td id="images"><a href="farmers/wheat">
+               <img src="images\wheat.jpg" alt="Wheat">
+               <center>
+                Wheat
+               </center></a>
+             </td>
+             <td id="images"><a href="farmers/wheat">
+               <img src="images\paddy_rice.jpg" alt="paddy_rice">
+               <center>
+              paddy_rice
+               </center></a>
+             </td>
+         </div>
+           </tr>
+             </center>
+     </section2>
+     <footer>
+      <%- include("footer.ejs") %>
+     </footer>
+      
+     
+  </body>
+</html>

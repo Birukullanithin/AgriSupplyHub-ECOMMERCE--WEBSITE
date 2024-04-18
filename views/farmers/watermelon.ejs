@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FArmers</title>
+    <link rel="stylesheet" href="../home.css">
+  </head>
+  <body>
+    <%- include("header.ejs") %>
+    <center>
+  
+      <h2 style="color:white">Farmers Available</h2>
+    </center>
+    <!-- to display available farmers -->
+    <section2 class="siddu">
+        <center>
+      <div class="box">
+
+        <img src="\images\p11.png" alt="person" />
+        <p style="color:white">
+          Name:Rajavardhan<br />
+          Contact:9701360782<br />
+          Address:srirampur,peddapally<br />
+          crop:Watermelon<br />
+          Quantity Available in kgs:90 <br />
+          cost per kg:80<br />
+        </p>
+        <form action="/add" method="post" class="form">
+          <!-- <input class="input" type="text"  name="name" placeholder="enter the login name"> -->
+          <input class="input" type="hidden" name="Apple" value="watermelon">
+          <input class="input" type="hidden" name="cost" value="20">
+          <input class="input" type="number" name="quantity" placeholder="enter the quantity">
+          <button class="btn2" type="submit">Add</button>
+        
+        </form>
+
+      </div>
+      </center>
+    </section2>
+    <br /><br /><br />
+    <section2 class="siddu">
+        <center>
+      <div class="box">
+
+        <img src="\images\p11.png" alt="person" />
+        <p style="color:white">
+          Name:Sravan Kumar<br />
+          Contact:9701360783<br />
+          Address:manthani,khammam<br />
+          crop:watermelon<br />
+          Quantity Available in kgs:100 <br />
+          cost per kg:60<br />
+        </p>
+        <form action="/add" method="post" class="form">
+          <!-- <input class="input" type="text"  name="name" placeholder="enter the login name"> -->
+          <input class="input" type="hidden" name="Apple" value="watermelon">
+          <input class="input" type="hidden" name="cost" value="20">
+          <input class="input" type="number" name="quantity" placeholder="enter the quantity">
+          <button class="btn2" type="submit">Add</button>
+        
+        </form>
+
+      </div>
+      </center>
+    </section2>
+    <%- include("footer.ejs") %>
+  </body>
+</html>
